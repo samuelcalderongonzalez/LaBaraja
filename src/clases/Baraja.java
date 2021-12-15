@@ -4,12 +4,11 @@ import java.util.ArrayList;
 
 public class Baraja {
 	// Propiedades
-	private ArrayList<Carta> lista_cartas;
+	protected ArrayList<Carta> lista_cartas;
 
 	// Constructores
 	public Baraja() {
-
-		
+		lista_cartas = new ArrayList<Carta>();	
 	}
 
 	public Baraja(int tipobaraja) {
@@ -98,14 +97,10 @@ public class Baraja {
 	}
 
 	public int getNumeroCartas() {
-		int numero = this.lista_cartas.size();
-		return numero;
+		return this.lista_cartas.size();
 	}
 
 	public boolean isVacia() {
-		if (this.lista_cartas.isEmpty())
-			return true;
-		else
-			return false;
+		return this.lista_cartas.isEmpty();
 	}
 }

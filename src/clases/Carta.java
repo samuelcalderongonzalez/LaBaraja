@@ -149,7 +149,7 @@ public class Carta {
 			nombrePalo = "Bastos";
 			break;
 		default:
-			nombrePalo = "No se ha podido reconocer el palo, asegurate de que el número introducido es entre 0 y 3";
+			nombrePalo = "No se ha podido reconocer el palo, asegurate de que el número introducido está entre 0 y 3";
 			break;
 		}
 		String nombreComplejo = nombreNumero + " de " + nombrePalo;
